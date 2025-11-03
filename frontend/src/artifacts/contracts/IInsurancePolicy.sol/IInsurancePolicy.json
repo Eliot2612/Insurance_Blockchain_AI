@@ -1,0 +1,145 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IInsurancePolicy",
+  "sourceName": "contracts/IInsurancePolicy.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        }
+      ],
+      "name": "activatePolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getPolicy",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "policyHolder",
+              "type": "address"
+            },
+            {
+              "internalType": "uint96",
+              "name": "premium",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "sumInsured",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint40",
+              "name": "startDate",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "endDate",
+              "type": "uint40"
+            },
+            {
+              "internalType": "enum IInsurancePolicy.PolicyStatus",
+              "name": "status",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IInsurancePolicy.Policy",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_employee",
+          "type": "address"
+        }
+      ],
+      "name": "isEmployee",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint96",
+          "name": "_premium",
+          "type": "uint96"
+        },
+        {
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        }
+      ],
+      "name": "payActivePolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint96",
+          "name": "_premium",
+          "type": "uint96"
+        },
+        {
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        }
+      ],
+      "name": "renewPolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

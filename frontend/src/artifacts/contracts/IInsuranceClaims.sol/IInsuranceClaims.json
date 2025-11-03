@@ -1,0 +1,85 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IInsuranceClaims",
+  "sourceName": "contracts/IInsuranceClaims.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_claimId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getClaim",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "policyId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "claimant",
+              "type": "address"
+            },
+            {
+              "internalType": "uint96",
+              "name": "amount",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint40",
+              "name": "dateFiled",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint8",
+              "name": "mlValidationScore",
+              "type": "uint8"
+            },
+            {
+              "internalType": "enum IInsuranceClaims.ClaimStatus",
+              "name": "status",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IInsuranceClaims.Claim",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_claimId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "enum IInsuranceClaims.ClaimStatus",
+          "name": "_newStatus",
+          "type": "uint8"
+        },
+        {
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        }
+      ],
+      "name": "updateClaimStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
